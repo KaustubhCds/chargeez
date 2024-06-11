@@ -1,0 +1,251 @@
+
+.addchargerform {
+  position: relative;
+  border-radius: 50px;
+  background-color: var(--color-white);  
+  width: 54.38rem;
+  height: 48rem;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: #098248;
+  font-family: var(--font-poppins);
+}
+
+.add-charger {
+  position: absolute;
+  top: 6.5rem;
+  left: auto;
+  width: 90rem;
+  height: 40rem;
+}
+.formheader {
+    position: absolute;
+    top: -5rem;
+    left: 20rem;
+    font-size: 35px;
+    display: inline-block;
+    width: 25rem;
+    height: 5rem;
+    -webkit-text-stroke: 1px #098248;
+}
+.addcharger-line{
+    position: absolute;
+    top: -1.4rem;
+    left: 12rem;
+    border-top: 2.5px solid var(--color-seagreen);
+    box-sizing: border-box;
+    width: 32rem;
+    height: 3rem;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+
+.box8,
+
+.box10,
+.box11 {
+    position: absolute;
+    top: 0rem;
+    left: 22rem;
+    border-radius: 5px;
+    background: linear-gradient(
+        180deg,
+        rgba(252, 106, 0, 0.5),
+        rgba(128, 128, 128, 0.46) 8.85%,
+        rgba(128, 128, 128, 0.46) 8.86%,
+        rgba(128, 128, 128, 0)
+    );
+    border: 1px solid var(--color-seagreen);
+    box-sizing: border-box;
+    width: 25rem;
+    height: 2rem;
+}
+.box7 {
+    position: absolute;
+    top: 0rem;
+    left: 22rem; 
+    width: 25rem;
+    height: 2rem;
+}
+.box9 {
+    position: absolute;
+    top: -0.5rem;
+    left: 21rem; 
+    width: 25rem;
+    height: 3rem;
+}
+
+.point1,
+.point2,
+.point3,
+.point4,
+.point5,
+.point6,
+.point7,
+.point8,
+.point9,
+.point10,
+.point11 {
+    position: absolute;
+    top: 1rem;
+    left: 5rem;    
+    width: 25rem;
+    height: 2rem;
+}
+.point2,
+.point3,
+.point4,
+.point5,
+.point6,
+.point7,
+.point8,
+.point9,
+.point10,
+.point11 {    
+    top: 4rem;
+}
+.point3,
+.point4,
+.point5,
+.point6,
+.point7,
+.point8,
+.point9,
+.point10,
+.point11 {    
+    top: 7rem;
+}
+.point4,
+.point5,
+.point6,
+.point7,
+.point8,
+.point9,
+.point10,
+.point11 {    
+    top: 10rem;
+}
+.point5,
+.point6,
+.point7,
+.point8,
+.point9,
+.point10,
+.point11 {    
+    top: 13rem;
+}
+.point6,
+.point7,
+.point8,
+.point9,
+.point10,
+.point11 {    
+    top: 16rem;
+}
+.point7,
+.point8,
+.point9,
+.point10,
+.point11 {    
+    top: 19rem;
+}
+.point8,
+.point9,
+.point10,
+.point11 {    
+    top: 22rem;
+}
+
+.point9,
+.point10,
+.point11 {    
+    top: 25rem;
+}
+
+.point10,
+.point11 {    
+    top: 28rem;
+}
+
+.point11 {    
+    top: 31rem;
+}
+.submitbutton {
+    position: absolute;
+    top: 36rem;
+    left: 21rem;
+    border-radius: 18px;
+    width: 9.94rem;
+    height: 3.44rem;
+    color: var(--color-white);
+    font-size: x-large;
+    background-color: #098248;
+    width: 9.94rem;
+    height: 3.44rem;
+}
+.addchargerform input {
+    font-size: 15px; /* Adjust the font size as needed */
+    padding: 15px; /* Adjust the padding as needed */
+  }
+
+
+/* HELP BUTTON */
+
+.help-button {
+    position: absolute; /* Keep absolute positioning */
+    top: 0rem; /* Move the button higher up */
+    right: 4rem; /* Adjust this value to move the button closer to or further from the box */
+    margin-left: 0; /* Remove margin-left */
+    padding: 5px;
+    font-size: 16px; /* Keep font size */
+    line-height: 30px; /* Keep line height for vertical alignment */
+    cursor: pointer;
+    background-color: #007bff; /* Keep background color */
+    color: white; /* Keep text color */
+    border: 1px solid #007bff; /* Keep border style */
+    border-radius: 50%;
+    width: 30px; /* Keep width for a larger circle */
+    height: 30px; /* Keep height for a larger circle */
+    text-align: center;
+}
+
+
+.help-popup {
+    position: absolute;
+    z-index: 10;
+    top: 100%; /* Adjust position as needed */
+    left: 50%; /* Adjust position as needed */
+    transform: translateX(-50%);
+    width: 300px; /* Adjust width as needed */
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.help-popup p {
+    margin-top: 0;
+}
+
+.help-popup ul {
+    padding-left: 20px;
+}
+
+.close-help {
+    display: block;
+    margin-top: 10px;
+    background: #ccc;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+

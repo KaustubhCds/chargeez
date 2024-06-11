@@ -1,0 +1,150 @@
+/* Contact.css */
+
+.contactpage {
+  background-color: #36454F;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 80%;
+}
+
+.section.who-we-are {
+  flex-direction: row;
+}
+
+.section.vision-and-what-we-do {
+  flex-direction: column;
+  width: 60%;
+}
+
+.section.vision-and-what-we-do .text-container {
+  width: 80%;
+  font-size: 1.2em;
+  margin-top: 20px; /* Add margin top */
+}
+
+.text-container {
+  width: 60%;
+  font-size: 1.2em; /* Increase the font size of the text within the containers */
+}
+
+.image-left {
+  width: 35%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.image-right {
+  width: 25%; /* Adjusted the width to be smaller */
+  height: auto; /* Set height to auto to maintain aspect ratio */
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.section h3 {
+  color: #7DF9FF;
+  border-bottom: 1px solid #7DF9FF;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 1.5em; /* Increase the font size of the headings */
+  text-align: center; /* Align the headings to the center */
+}
+
+.why-choose-us {
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px; /* Add margin from the top */
+}
+
+.why-choose-us h3 {
+  color: #7DF9FF;
+  border-bottom: 1px solid #7DF9FF;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 1.5em; /* Increase the font size of the headings */
+  text-align: center; /* Align the headings to the center */
+}
+
+.why-choose-us ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 1.2em; /* Increase the font size of the text within the containers */
+}
+
+.why-choose-us li {
+  margin-bottom: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contact-us {
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-us h3 {
+  color: #7DF9FF;
+  border-bottom: 1px solid #7DF9FF;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 1.5em; /* Increase the font size of the headings */
+  text-align: center; /* Align the headings to the center */
+}
+
+.contact-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.contact-details p {
+  display: flex;
+  align-items: center;
+}
+
+.contact-details .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.vision-and-map {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.vision-and-map .text-container {
+  width: 60%;
+  font-size: 1.2em; /* Increase the font size of the text within the containers */
+  margin-top: 20px; /* Add margin top */
+}
+
+.vision-and-map .image-right {
+  width: 25%; /* Adjusted the width to be smaller */
+  height: auto; /* Set height to auto to maintain aspect ratio */
+}

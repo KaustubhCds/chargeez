@@ -1,0 +1,344 @@
+.forget-password,
+.signin-box {
+  position: absolute;
+  left: 0;
+  border: 1px solid var(--color-gray);
+  box-sizing: border-box;
+}
+.signin-box {
+  top: 0;
+  border-radius: 54px;
+  background-color: var(--color-white);
+  width: 39.19rem;
+  height: 43.75rem;
+}
+.forget-password {
+  top: 0.13rem;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gainsboro);
+  width: 28.76rem;
+  height: 2.36rem;
+}
+.continue-as-guest {
+  position: absolute;
+  top: 0;
+  left: 5.26rem;
+  display: inline-block;
+  width: 20.5rem;
+  height: 2.36rem;
+  cursor: pointer;
+}
+.button-guest {
+  position: absolute;
+  top: 37.35rem;
+  left: 4.53rem;
+  width: 28.76rem;
+  height: 2.49rem;
+}
+.forget-password1,
+.sign-out {
+  position: absolute;
+  height: 2.36rem;
+}
+.forget-password1 {
+  top: 0.19rem;
+  left: 0;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gainsboro);
+  border: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 28.76rem;
+}
+.sign-out {
+  top: 0;
+  left: 10.1rem;
+  display: inline-block;
+  width: 20.5rem;
+}
+.button-sign-out {
+  position: absolute;
+  top: 34.05rem;
+  left: 4.53rem;
+  width: 28.76rem;
+  height: 2.43rem;
+}
+.button-facebook:hover,
+.button-google:hover,
+.button-email-id-sing-up:hover,
+.button-sign-out:hover,
+.button-guest:hover,
+.button-signin:hover
+{
+  background-color:  rgba(70, 142, 249, 0.8);  /* Change this to your preferred hover color */
+  transform: scale(1);  /* Slightly enlarges the button */
+  border-radius: var(--br-mini);
+}
+.box-facebook {
+  position: absolute;
+  top: 0.13rem;
+  left: 0;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gainsboro);
+  border: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 28.76rem;
+  height: 2.43rem;
+  cursor: pointer;
+}
+.facebook-2815970-960-720-1-icon {
+  position: absolute;
+  top: 0.27rem;
+  left: 2.82rem;
+  width: 2.57rem;
+  height: 2.16rem;
+  object-fit: cover;
+}
+.sign-in-with {
+  position: absolute;
+  top: 0;
+  left: 6.12rem;
+  display: inline-block;
+  width: 20.5rem;
+  height: 2.36rem;
+}
+.button-facebook {
+  position: absolute;
+  top: 30.91rem;
+  left: 4.53rem;
+  width: 28.76rem;
+  height: 2.36rem;
+  border-radius: var(--br-mini);
+  
+}
+.google-logo-png-image-1-icon {
+  position: absolute;
+  top: 0.39rem;
+  left: 2.94rem;
+  width: 2.26rem;
+  height: 1.95rem;
+  object-fit: cover;
+}
+.button-google {
+  position: absolute;
+  top: 27.72rem;
+  left: 4.53rem;
+  width: 28.76rem;
+  height: 2.43rem;
+  cursor: pointer;
+}
+.forget-password4 {
+  position: absolute;
+  top: 0.06rem;
+  left: 0;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gainsboro);
+  border: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 28.76rem;
+  height: 2.36rem;
+}
+
+.button-email-id-sing-up {
+  position: absolute;
+  top: 22.71rem;
+  left: 4.53rem;
+  width: 28.76rem;
+  height: 2.43rem;
+  cursor: pointer;
+}
+.forgot-pasword:hover{
+  text-decoration: underline;
+}
+.forgot-pasword {
+  top: 19.79rem;
+  left: 11.63rem;
+  display: inline-block;
+  width: 20.5rem;
+  text-underline-position: below;
+}
+.forgot-pasword,
+.sign-in-b,
+.sign-in1 {
+  position: absolute;
+  height: 2.36rem;
+}
+.sign-in-b {
+  top: 0.07rem;
+  left: 0;
+  border-radius: var(--br-mini);
+  background-color: rgba(70, 142, 249, 0.8);
+  border: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 28.76rem;
+}
+.sign-in1 {
+  top: 0;
+  left: 10.25rem;
+  display: inline-block;
+  width: 7.4rem;
+}
+.button-signin {
+  position: absolute;
+  top: 16.59rem;
+  left: 4.53rem;
+  width: 28.76rem;
+  height: 2.43rem;
+  cursor: pointer;
+}
+.password {
+  position: absolute;
+  top: 13.16rem;
+  left: 3.06rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro);
+  border: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 31.82rem;
+  height: 2.36rem;
+}
+.password1 {
+  position: absolute;
+  top: 10.38rem;
+  left: 5.44rem;
+  display: inline-block;
+  width: 9.19rem;
+  height: 1.56rem;
+}
+.email-id {
+  position: absolute;
+  top: 7.25rem;
+  left: 3.06rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro);
+  border: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 31.82rem;
+  height: 2.36rem;
+}
+.span {
+  font-family: var(--font-inter);
+}
+.email {
+  position: absolute;
+  top: 4.75rem;
+  left: 5.38rem;
+  display: inline-block;
+  width: 6.69rem;
+  height: 1.56rem;
+}
+.sign-in-child {
+  position: absolute;
+  top: 3.95rem;
+  left: 7.37rem;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 25.52rem;
+  height: 0.06rem;
+}
+.sign-in2 {
+  position: absolute;
+  top: 1.18rem;
+  left: 15.85rem;
+  font-size: var(--font-size-13xl);
+  display: inline-block;
+  width: 22.21rem;
+  height: 2.78rem;
+}
+.sign-in {
+  position: absolute;
+  top: 12.38rem;
+  left: 75.38rem;
+  width: 39%;
+  height: 43.75rem;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+}
+
+
+.car-ev-1 {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  top: 63.69rem;
+  height: 61.32rem;
+  object-fit: cover;
+  border-radius: 10%;
+}
+.car-journey {
+  top: 63.69rem;
+  height: 61.32rem;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  border-radius: 10%;
+  
+}
+
+.plug-into-simplicity {
+  margin: 0;
+}
+.plug-into-simplicity-container1 {
+  line-break: auto;
+  width: 100%;
+}
+.plug-into-simplicity-container,
+.share-your-charger-container {
+  position: absolute;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+.plug-into-simplicity-container {
+  top: 5.44rem;
+  left: 28.88rem;
+  font-size: 3.75rem;
+  color: #fc6a00;
+  text-align: left;
+  width: 45.25rem;
+  height: 27.88rem;
+}
+.share-your-charger-container {
+  top: 36.56rem;
+  left: 31.69rem;
+  font-size: 3.13rem;
+  color: rgba(23, 84, 174, 0.94);
+  width: 34.19rem;
+  height: 19.19rem;
+}
+.rectangle-signin {
+  position: absolute;
+  top: 8.69rem;
+  left: 0.19rem;
+  width: 25.19rem;
+  height: 54.69rem;
+  object-fit: cover;
+}
+.signin-child,
+.signin-item {
+  position: absolute;
+  top: 39.12rem;
+  left: 46.41rem;
+  width: 2.3rem;
+  height: 4.53rem;
+}
+.signin-item {
+  top: 49.25rem;
+  height: 4.41rem;
+}
+.signin {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 128rem;
+  overflow-y: auto;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+
+.sign-in input {
+  font-size: 21px; /* Adjust the font size as needed */
+  padding: 15px; /* Adjust the padding as needed */
+}

@@ -1,0 +1,141 @@
+.sign-up {
+  position: absolute;
+  top: 1.63rem;
+  left: 9.75rem;
+  font-size: var(--font-size-13xl);
+  display: inline-block;
+  width: 21.44rem;
+  height: 3.38rem;
+  -webkit-text-stroke: 1px #098248;
+}
+.signup-line {
+  position: absolute;
+  top: 5.25rem;
+  left: 1.75rem;
+  border-top: 1px solid var(--color-seagreen);
+  box-sizing: border-box;
+  width: 24.69rem;
+  height: 0.13rem;
+}
+.email-id1,
+.email-id2,
+.email-id3,
+.email-id4 {
+  position: absolute;
+  top: 8.56rem;
+  left: 0.06rem;
+  border-radius: var(--br-2xs);
+  background: linear-gradient(
+    180deg,
+    rgba(252, 106, 0, 0.5),
+    rgba(128, 128, 128, 0.46) 8.85%,
+    rgba(128, 128, 128, 0.46) 8.86%,
+    rgba(128, 128, 128, 0)
+  );
+  border: 1px solid var(--color-seagreen);
+  box-sizing: border-box;
+  width: 32.63rem;
+  height: 3rem;
+}
+.email-id2,
+.email-id3,
+.email-id4 {
+  top: 15.81rem;
+  left: 0.19rem;
+}
+.email-id3,
+.email-id4 {
+  top: 22.69rem;
+}
+.email-id4 {
+  top: 29.94rem;
+  left: 0.31rem;
+}
+.span1 {
+  font-size: var(--font-size-13xl);
+  font-family: var(--font-inter);
+}
+.email-id5,
+.mobile-number,
+.name,
+.password2 {
+  position: absolute;
+  -webkit-text-stroke: 1px #098248;
+}
+.name {
+  top: 5.81rem;
+  left: 0;
+}
+.email-id5,
+.mobile-number,
+.password2 {
+  top: 12.69rem;
+  left: 0.13rem;
+}
+.email-id5,
+.password2 {
+  top: 19.63rem;
+}
+.password2 {
+  top: 26.44rem;
+  left: 0.25rem;
+}
+.close1437-1-icon {
+  position: absolute;
+  top: -0.06rem;
+  left: 28.69rem;
+  width: 3.25rem;
+  height: 3.88rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.sign-up-done-button-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 18px;
+  background-color: var(--color-seagreen);
+  width: 9.94rem;
+  height: 3.44rem;
+}
+.sign-up1 {
+  position: absolute;
+  top: 0.86rem;
+  left: 2rem;
+  font-weight:600;
+  font-size: x-large;
+}
+.sign-up-done-button {
+  position: absolute;
+  top: 34.19rem;
+  left: 9.88rem;
+  border-radius: 18px;
+  width: 9.94rem;
+  height: 3.44rem;
+  color: var(--color-white);
+}
+.signup {
+  position: absolute;
+  top: 0.88rem;
+  left: 0.75rem;
+  width: 32.88rem;
+  height: 37.63rem;
+}
+.sign-up-pop-up {
+  position: relative;
+  border-radius: 50px;
+  background-color: var(--color-white);  
+  width: 34.38rem;
+  height: 40.75rem;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: #098248;
+  font-family: var(--font-poppins);
+}
+.sign-up-pop-up input {
+  font-size: 21px; /* Adjust the font size as needed */
+  padding: 15px; /* Adjust the padding as needed */
+}

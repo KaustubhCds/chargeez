@@ -1,0 +1,274 @@
+.rectangle-SrFirst,
+.rectangle-SrSecond {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 15%;
+}
+.rectangle-SrFirst {
+  top: 8.5rem;
+  left: 3rem;
+  width: 58rem;
+  height: 51rem;
+}
+.rectangle-SrSecond {
+  top: 61.75rem;
+  left: 62.31rem;
+  width: 50.5rem;
+  height: 58.06rem;
+}
+.our-services {
+  position: absolute;
+  top: 9.31rem;
+  left: 73.38rem;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #FC6A00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.06rem;
+  height: 6.13rem;
+}
+.welcome-to-our {
+  margin: 0;
+}
+.welcome-to-our-container1 {
+  line-break: auto;
+  width: 100%;
+}
+.welcome-to-our-container {
+  position: absolute;
+  top: 12.38rem;
+  left: 65rem;
+  color: #1754ae;
+  font-size: var(--font-size-13xl);
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 50rem;
+  height: 42.75rem;
+}
+.become-a-charging-container {
+  position: absolute;
+  top: 60.94rem;
+  left: 1.31rem;
+  font-weight: 700;
+}
+.Become-host {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FC6A00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share-your-charger1 {
+  margin: 0;
+  color: var(--color-darkslateblue);
+  font-size: 3rem;
+  font-weight: 700;
+  color: #e70c5b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.join-our-network-container {
+  position: absolute;
+  top: 78.5rem;
+  left: 0.94rem;
+  font-size: inherit;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width:56.31rem;
+  height: 42.13rem;
+  line-break: auto;
+  font-family: var(--font-poppins);
+  
+  }
+.Join-our {    
+  position: absolute;
+  top: -15rem;
+  left: 1rem;
+  color: #1754ae;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 56.06rem;
+  height: 42.75rem;
+  font-family: var(--font-poppins);
+}
+.benefits-include{
+  position: absolute;
+  font-weight: 800;
+  color: #FC6A00;
+  top: 13rem;
+  left: 1rem;
+  font-size: 25px;
+  }
+.benefits-points {
+  position: absolute;
+  margin: 0;
+  padding-left: var(--padding-18xl);
+  top: 18rem;
+  left: 1rem;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: #1754ae;
+  font-size: 25px;
+}
+.Benefit-Pointer {
+  font-weight: 800;
+}
+
+.rectangle-SrThird {
+  position: absolute;
+  top: 119.81rem;
+  left: 2.5rem;
+  width: 60.75rem;
+  height: 58.44rem;
+  object-fit: cover;
+  border-radius: 15%;
+}
+.discover-charging-stations-container {
+  position: absolute;
+  top: 122.56rem;
+  left: 73rem;
+  color: #FC6A00;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.discover-charger {
+  margin: 0;
+  font-weight: 700;
+  color: #e70c5b;
+}
+
+.navigating-the-world-container {
+  position: absolute;
+  top: 137.38rem;
+  left: 65rem;  
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width:50rem;
+  height: 42.13rem;
+  line-break: auto;
+  font-family: var(--font-poppins);
+  color: #1754ae;
+}
+
+.navigating-the-world {
+  position: absolute;
+  top: -8rem;
+  left: -0.50rem;
+  color: #1754ae;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 54rem;
+  height: 42.75rem;
+  font-family: var(--font-poppins);
+}
+.features-include{
+  position: absolute;
+  font-weight: 800;
+  color: #FC6A00;
+  top: 12rem;
+  left: 1rem;
+  font-size: 25px;
+  
+}
+.features-points {
+  position: absolute;
+  margin: 0;
+  padding-left: var(--padding-18xl);
+  top: 18rem;
+  left: 1rem;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: #1754ae;
+  font-size: 25px;
+}
+.feattures-pointers{
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+.rectangle-SrFourth {
+  position: absolute;
+  top: 178.25rem;
+  left: 61.5rem;
+  width: 57.31rem;
+  height: 51.75rem;
+  object-fit: cover;
+  border-radius: 15%;
+}
+.resources-support {
+  position: absolute;
+  top: 180.25rem;
+  left: 9.06rem;  
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FC6A00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whether-youre-new-container {
+  position: absolute;
+  top: 179rem;
+  left: 2rem;
+  font-size: inherit;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 56rem;
+  height: 60.44rem;
+}
+.guide-faq {
+  position: absolute;
+  font-weight: 800;
+  color: #FC6A00;
+  top: 21rem;
+  left: 1rem;
+  font-size: 25px;
+}
+.guides-points {
+  position: absolute;
+  margin: 0;
+  padding-left: var(--padding-18xl);
+  top: 26rem;
+  left: 1rem;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: #1754ae;
+  font-size: 25px;
+}
+.guides-pointers {
+  font-weight: 800;
+}
+.servicespage {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 240rem;
+  overflow-y: auto;
+  text-align: center;
+  font-size: var(--font-size-31xl);
+  color: var(--color-darkslateblue);
+  font-family: var(--font-poppins);
+}
