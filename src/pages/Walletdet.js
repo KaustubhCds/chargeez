@@ -87,7 +87,7 @@ function Walletdet() {
               {/* Logo */}
               <img
                 src="./fevicon.png"
-                alt="Logo"
+                alt=" Logo"
                 className="absolute top-4 right-4 h-14 w-32"
               />
             </div>

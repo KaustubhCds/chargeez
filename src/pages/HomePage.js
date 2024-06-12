@@ -10,12 +10,12 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useLocation } from 'react-router-dom';
 import "./HomePage.css";
 
-
 const HomePage = () => {
   const [isFindChargerOpen, setFindChargerOpen] = useState(false);
   const [chargerLocations, setChargerLocations] = useState([]);
   const [isAddChargerOpen, setIsAddChargerOpen] = useState(false);
   const [currentUser, setCurrentUser] = useState(null); // State to track the current user
+  const [userLocation, setUserLocation] = useState(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -24,6 +24,21 @@ const HomePage = () => {
     });
 
     return () => unsubscribe(); // Cleanup subscription on unmount
+  }, []);
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(position => {
+        const { latitude, longitude } = position.coords;
+        setUserLocation({ lat: latitude, lng: longitude });
+      }, () => {
+        console.log("Error getting the current position. Using default location.");
+        setUserLocation({ lat: 18, lng: 73 });
+      });
+    } else {
+      console.log("Geolocation is not available. Using default location.");
+      setUserLocation({ lat: 18, lng: 73 });
+    }
   }, []);
 
   const openFindCharger = useCallback(() => {
@@ -81,6 +96,7 @@ const HomePage = () => {
             chargerLocations={chargerLocations}
             openFindCharger={openFindCharger}
             currentUser={currentUser}
+            center={userLocation} // Pass the userLocation as center
           />
         </div>
       </div>
