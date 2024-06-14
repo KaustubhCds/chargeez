@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import NavBar from "./NavBar";
 import Sidebar from "./Sidebar";
-import WalletBalance from "./Walletbal";
 import AddMoney from "./Addmoney";
-import Invoice from "./Invoice";
 
 function Walletdet() {
   const [balance, setBalance] = useState(5000); // Initial wallet balance (mocked)
@@ -65,39 +63,40 @@ function Walletdet() {
   };
 
   return (
-    <div>
+    <div className="flex flex-col h-screen">
       <NavBar />
-      <div className="flex h-screen">
+      <div className="flex flex-1 overflow-hidden">
         <Sidebar />
-        <div className="w-full sm:w-4/5 p-4 bg-gray-100 sm:pl-60 pt-20">
-          <div className="flex justify-between items-start">
+        <div className="flex flex-col w-full sm:w-4/5 p-4 bg-gray-100 sm:pl-60 pt-20 overflow-auto">
+          <div className="flex flex-col md:flex-row md:space-x-4 items-start">
             {/* Wallet Card */}
-            <div className="bg-gradient-to-r relative from-gray-700 via-gray-500 to-green-200 rounded-lg w-[450px] h-64 p-6 mb-4 shadow-lg">
-              <div className="text-white text-2xl">
-                <div className="text-3xl font-bold">Username:</div>
-                <div className="text-3xl">John Doe</div>
+            <div className="bg-gradient-to-r relative from-gray-700 via-gray-500 to-green-200 rounded-lg w-full md:w-[450px] h-64 p-6 mb-4 shadow-lg">
+              <div className="text-white">
+                <h2 className="text-2xl font-bold">Username:</h2>
+                <p className="text-2xl">John Doe</p>
+                <div className="mt-4">
+                  <h2 className="text-2xl font-bold">Wallet Balance:</h2>
+                  <p className="text-3xl">Rs.{balance}</p>
+                </div>
+                <div className="mt-4">
+                  <p className="text-2xl">**** **** **** 1234</p>
+                </div>
+                {/* Logo */}
+                <img
+                  src="./fevicon.png"
+                  alt=" Logo"
+                  className="absolute top-4 right-4 h-14 w-20 md:h-14 md:w-20"
+                />
               </div>
-              <div className="text-white text-2xl mt-4">
-                <div className="text-3xl font-bold">Wallet Balance:</div>
-                <div className="text-3xl">Rs.{balance}</div>
-              </div>
-              <div className="text-white text-2xl mt-4">
-                <div className="text-3xl">**** **** **** 1234</div>
-              </div>
-              {/* Logo */}
-              <img
-                src="./fevicon.png"
-                alt=" Logo"
-                className="absolute top-4 right-4 h-14 w-32"
-              />
             </div>
-            <button className="relative -translate-x-96 mt-16 ">
+            {/* Add Money Section */}
+            <div className="w-full md:w-[300px] md:min-w-[250px]">
               <AddMoney updateBalance={updateBalance} />
-            </button>
+            </div>
           </div>
 
           {/* Recent Transactions */}
-          <div className="mt-20">
+          <div className="mt-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Recent Transactions
             </h2>

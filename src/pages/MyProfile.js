@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Walletdet from "./Walletdet";
@@ -6,7 +7,7 @@ import NavBar from "./NavBar";
 
 function Profile() {
   return (
-    <div className="w-full sm:w-4/5 p-4 bg-gray-100 sm:pl-60 pt-20">
+    <div className="w-full sm:w-4/5 p-4 bg-gray-100 sm:pl-60 pt-10 max-h-screen overflow-auto">
       <div className="flex items-center mb-4">
         <div className="h-48 w-48 rounded-full">
           {/* Avatar */}
@@ -30,7 +31,7 @@ function Profile() {
               First Name:
             </label>
             <input
-              className="p-3 w-2/3 border border-gray-800 rounded-lg"
+              className="p-3 w-full sm:w-80 border border-gray-800 rounded-lg"
               type="text"
               id="firstName"
               name="firstName"
@@ -41,7 +42,7 @@ function Profile() {
               Last Name:
             </label>
             <input
-              className="p-3 w-2/3 border border-gray-800 rounded-lg"
+              className="p-3 w-full sm:w-80 border border-gray-800 rounded-lg"
               type="text"
               id="lastName"
               name="lastName"
@@ -56,7 +57,7 @@ function Profile() {
               Email:
             </label>
             <input
-              className="p-3 w-2/3 border border-gray-800 rounded-lg"
+              className="p-3 w-full sm:w-80 border border-gray-800 rounded-lg"
               type="email"
               id="email"
               name="email"
@@ -67,7 +68,7 @@ function Profile() {
               Phone Number:
             </label>
             <input
-              className="p-3 w-2/3 border border-gray-800 rounded-lg"
+              className="p-3 w-full sm:w-80 border border-gray-800 rounded-lg"
               type="text"
               id="phoneNumber"
               name="phoneNumber"
@@ -82,7 +83,7 @@ function Profile() {
               Location:
             </label>
             <input
-              className="p-3 w-2/3 border border-gray-800 rounded-lg"
+              className="p-3 w-full sm:w-80 border border-gray-800 rounded-lg"
               type="text"
               id="location"
               name="location"
@@ -93,7 +94,7 @@ function Profile() {
               Postal Code:
             </label>
             <input
-              className="p-3 w-2/3 border border-gray-800 rounded-lg"
+              className="p-3 w-full sm:w-80 border border-gray-800 rounded-lg"
               type="text"
               id="postal"
               name="postal"
@@ -102,9 +103,9 @@ function Profile() {
         </div>
 
         {/* Save Changes Button */}
-        <div className="flex justify-center text-2xl">
+        <div className="flex justify-center">
           <button
-            className="px-10 -translate-x-28 rounded-xl py-2 mt-10 item bg-green-500 text-white  hover:bg-green-600"
+            className="px-10 py-2 -translate-x-20 mt-5 bg-green-500 text-white rounded-xl hover:bg-green-600"
             type="submit"
           >
             Save Changes
@@ -117,13 +118,13 @@ function Profile() {
 
 function Myprofile() {
   return (
-    <div>
+    <div className="flex flex-col h-screen">
       <NavBar />
-      <div className="flex h-screen">
+
+      <div className="flex flex-1 ">
         <Sidebar />
         <Profile />
       </div>
-      <Walletdet />
     </div>
   );
 }

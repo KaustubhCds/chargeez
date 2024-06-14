@@ -1,14 +1,15 @@
+
 import React, { useState, useCallback, useEffect } from "react";
 import FindCharger from "../components/FindCharger";
 import PortalPopup from "../components/PortalPopup";
-import MapComponent from '../pages/GoogleMaps';
+import MapComponent from "./GoogleMaps"; // Update the path if needed
 import AddCharger from '../components/AddCharger';
 import NavBar from "./NavBar";
 import { collection, getDocs } from "firebase/firestore";
 import { db, auth } from '../config/firebase'; // Ensure these are correctly imported
 import { onAuthStateChanged } from "firebase/auth";
 import { useLocation } from 'react-router-dom';
-import "./HomePage.css";
+
 
 const HomePage = () => {
   const [isFindChargerOpen, setFindChargerOpen] = useState(false);
@@ -92,12 +93,14 @@ const HomePage = () => {
         <NavBar />
 
         <div className="google-maps-container">
-          <MapComponent
-            chargerLocations={chargerLocations}
-            openFindCharger={openFindCharger}
-            currentUser={currentUser}
-            center={userLocation} // Pass the userLocation as center
-          />
+          {userLocation && (
+            <MapComponent
+              chargerLocations={chargerLocations}
+              openFindCharger={openFindCharger}
+              currentUser={currentUser}
+              center={userLocation} // Pass the userLocation as center
+            />
+          )}
         </div>
       </div>
 

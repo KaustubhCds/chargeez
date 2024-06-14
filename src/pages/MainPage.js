@@ -1,5 +1,7 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { auth } from '../config/firebase';
 import NavBar from './NavBar';
 import Performance from './Performance';
 import WhyToChoose from './WhyToChoose';
@@ -8,6 +10,16 @@ import Footer from './Footer';
 
 function MainPage() {
   const navigate = useNavigate();
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
+
+  // Check authentication state
+  auth.onAuthStateChanged(user => {
+    if (user) {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  });
 
   const handleSignInClick = () => {
     navigate('/signin'); // Navigate to the sign in page
@@ -32,18 +44,22 @@ function MainPage() {
             <p className='ml-0 md:ml-8'>Stations Effortlessly."</p>
           </div>
           <div className='mt-10 md:mt-16 flex flex-col md:flex-row ml-0 md:ml-16 space-y-4 md:space-y-0 md:space-x-4'>
-            <button
-              className='h-10 w-36 bg-[#8AFF74] rounded-xl text-brown font-semibold transition-transform transform hover:scale-105 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400'
-              onClick={handleFindChargerClick}
-            >
-              Find Your Charger
-            </button>
-            <button
-              className='h-10 w-36 bg-[#8AFF74] rounded-xl text-brown-600 font-semibold transition-transform transform hover:scale-105 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400'
-              onClick={handleSignInClick}
-            >
-              Sign In / Sign Up
-            </button>
+            {(
+              <button
+                className='h-10 w-36 bg-[#8AFF74] rounded-xl text-brown font-semibold transition-transform transform hover:scale-105 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400'
+                onClick={handleFindChargerClick}
+              >
+                Find Your Charger
+              </button>
+            )}
+            {!isLoggedIn && (
+              <button
+                className='h-10 w-36 bg-[#8AFF74] rounded-xl text-brown-600 font-semibold transition-transform transform hover:scale-105 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400'
+                onClick={handleSignInClick}
+              >
+                Sign In / Sign Up
+              </button>
+            )}
           </div>
         </div>
         {/* right side */}

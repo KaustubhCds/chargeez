@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import SignIn from "./pages/SignIn";
@@ -10,8 +11,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "./config/firebase";
 import MainPage from "./pages/MainPage";
 import FindCharger from './components/FindCharger';
-
-
+import Walletdet from "./pages/Walletdet";
 
 function App() {
   const location = useLocation();
@@ -86,17 +86,14 @@ function App() {
     let metaDescription = "";
 
     switch (location.pathname) {
-
       case "/":
         title = "ChargeEazy";
         metaDescription = "Access to the landing page";
         break;
-
-        case "/chargers":
+      case "/chargers":
         title = "ChargeEazy";
         metaDescription = "Access to the landing page";
         break;
-
       case "/signin":
         title = "ChargeEazy";
         metaDescription = "Sign in to access your account.";
@@ -116,6 +113,10 @@ function App() {
       case "/myprofile":
         title = "ChargeEazy";
         metaDescription = "Manage your profile.";
+        break;
+      case "/wallet-details":
+        title = "ChargeEazy";
+        metaDescription = "View your wallet details.";
         break;
       default:
         title = "ChargeEazy";
@@ -138,21 +139,23 @@ function App() {
   return (
     <LocationContext.Provider value={{ selectedLocation, setSelectedLocation }}>
       <>
-        
-
         <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/chargers" element={<FindCharger chargerLocations={[]} />} /> {/* Pass necessary props */}
+          <Route path="/" element={<MainPage />} />
+          <Route path="/chargers" element={<FindCharger chargerLocations={[]} />} /> {/* Pass necessary props */}
           <Route path="/signin" element={<SignIn />} />
           <Route path="/services" element={<Services />} />
           <Route path="/homepage" element={<HomePage chargerLocations={chargerLocations} />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/myprofile" element={<MyProfile />} />
+          <Route path="/user-details" element={<MyProfile />} />
+          <Route path="/wallet-details" element={<Walletdet />} />
+          <Route path="/logout" element={<MainPage/>} />
+          
         
         </Routes>
       </>
     </LocationContext.Provider>
   );
-};
+}
 
 export default App;
